@@ -1,0 +1,21 @@
+
+2021-10-27 17:21:15 INFO  CommonFunctions:34 - Orange HRM Test Begins
+2021-10-27 17:21:15 INFO  CommonFunctions:35 - Loading the property file
+2021-10-27 17:21:15 INFO  CommonFunctions:44 - Launching Chrome
+2021-10-27 17:21:27 INFO  CommonFunctions:52 - Navigating to Application
+2021-10-27 17:21:31 INFO  Test_Pending_Leave_Request:18 - Logging in to the application
+2021-10-27 17:21:36 INFO  Test_Pending_Leave_Request:33 - Getting the Pending Leave Request Details
+2021-10-27 17:21:36 INFO  Test_Pending_Leave_Request:35 - Verification
+2021-10-27 17:21:36 INFO  Test_Pending_Leave_Request:37 - End of Test_Pending_Leave_Request test case
+2021-10-27 17:21:37 INFO  Test_User_Role:39 - Navigating to Users Page
+2021-10-27 17:22:07 INFO  CommonFunctions:59 - Execution done. Closing the browser
+2021-10-29 17:52:20 INFO  CommonFunctions:34 - Orange HRM Test Begins
+2021-10-29 17:52:20 INFO  CommonFunctions:35 - Loading the property file
+2021-10-29 17:52:20 INFO  CommonFunctions:44 - Launching Chrome
+2021-10-29 17:52:26 INFO  CommonFunctions:52 - Navigating to Application
+2021-10-29 17:52:30 INFO  Test_Pending_Leave_Request:18 - Logging in to the application
+2021-10-29 17:52:34 INFO  Test_Pending_Leave_Request:33 - Getting the Pending Leave Request Details
+2021-10-29 17:52:34 INFO  Test_Pending_Leave_Request:35 - Verification
+2021-10-29 17:52:34 INFO  Test_Pending_Leave_Request:37 - End of Test_Pending_Leave_Request test case
+2021-10-29 17:52:34 INFO  Test_User_Role:39 - Navigating to Users Page
+2021-10-29 17:53:05 INFO  CommonFunctions:59 - Execution done. Closing the browser
