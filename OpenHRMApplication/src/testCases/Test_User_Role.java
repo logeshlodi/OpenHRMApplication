@@ -1,9 +1,13 @@
 package testCases;
 
+import java.time.Duration;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -16,8 +20,17 @@ public class Test_User_Role extends CommonFunctions{
 	
 	public void moveToUsersPage(){
 		Actions actions= new Actions(driver);
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.visibilityOf(User_Role_Page_Objects.adminLink));
 		actions.moveToElement(User_Role_Page_Objects.adminLink);
+		actions.build().perform();
+		
+		wait.until(ExpectedConditions.visibilityOf(User_Role_Page_Objects.userManagementLink));
 		actions.moveToElement(User_Role_Page_Objects.userManagementLink);
+		actions.build().perform();
+		
+		wait.until(ExpectedConditions.visibilityOf(User_Role_Page_Objects.usersLink));
 		actions.moveToElement(User_Role_Page_Objects.usersLink);
 		actions.click().build().perform();
 	}

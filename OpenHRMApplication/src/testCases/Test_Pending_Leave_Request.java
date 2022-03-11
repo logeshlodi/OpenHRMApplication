@@ -14,6 +14,7 @@ public class Test_Pending_Leave_Request extends CommonFunctions {
 	
 	static Logger logger= Logger.getLogger(Test_Pending_Leave_Request.class);
 	
+	
 	public void login(){
 		logger.info("Logging in to the application");
 		PageFactory.initElements(driver,Login_Page_Objects.class);

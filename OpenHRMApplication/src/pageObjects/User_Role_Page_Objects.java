@@ -17,7 +17,7 @@ public class User_Role_Page_Objects {
 	public static WebElement userRoleValue;
 	@FindBy(xpath="//tr/td[5]")
 	public static WebElement userStatusValue;
-	@FindBy(linkText="Admin")
+	@FindBy(xpath="//b[contains(.,'Admin')]")
 	public static WebElement adminLink;
 	@FindBy(linkText="User Management")
 	public static WebElement userManagementLink;

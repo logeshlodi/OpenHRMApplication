@@ -1,10 +1,9 @@
 package commonFunctions;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -37,21 +36,21 @@ public class CommonFunctions {
 
 		String browser=properties.getProperty("browser");
 		String url=properties.getProperty("url");
-		String driverLocation=properties.getProperty("DriverLocation");
+		//String driverLocation=properties.getProperty("DriverLocation");
 
 		if(browser.equalsIgnoreCase("chrome")){
-			System.setProperty("webdriver.chrome.driver",driverLocation);
+			//System.setProperty("webdriver.chrome.driver",driverLocation);
 			logger.info("Launching Chrome");
 			driver= new ChromeDriver();
-		} else if(browser.equalsIgnoreCase("fireFox")){
+		} else if(browser.equalsIgnoreCase("firefox")){
 			logger.info("Launching Firefox");
-			System.setProperty("webdriver.gecko.driver",driverLocation);
+			//System.setProperty("webdriver.gecko.driver",driverLocation);
 			driver= new FirefoxDriver();
 		}
 		driver.manage().window().maximize();
 		logger.info("Navigating to Application");
 		driver.get(url);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 
 	@AfterSuite
